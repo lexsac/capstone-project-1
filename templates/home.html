@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if jobs %}    
+        <p>{{ jobs.keys()[0] }} {{ jobs['title'] }}</p>
+        <p>{{ jobs.keys()[1] }} {{ jobs['description'] }}</p>
+        <p>{{ jobs.keys()[2] }} {{ jobs['url'] }}</p>
+        <p>{{ jobs.keys()[3] }} {{ jobs['date_posted'] }}</p>
+    {% endif %}
+</body>
+</html>
